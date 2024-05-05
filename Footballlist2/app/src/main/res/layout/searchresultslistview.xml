@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#d9e7d6">
+
+    <TextView
+        android:id="@+id/gameDateTextView"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:text="Date: " />
+
+    <TextView
+        android:id="@+id/gameCityTextView"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:text="City: " />
+
+    <TextView
+        android:id="@+id/teamATextView"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:text="Team A: " />
+
+    <TextView
+        android:id="@+id/teamBTextView"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:text="Team B: " />
+</LinearLayout>

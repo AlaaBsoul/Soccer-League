@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9e7d6"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView as header with margin below -->
+    <ImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:src="@drawable/img_1"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- ID and City in one Horizontal row with margins for separation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/editTextid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:background="#9ecfa5"
+            android:textColorHint="#000000"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:background="#9ecfa5"
+            android:textColorHint="#000000"
+            android:layout_weight="1"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <!-- Team A and Team B in another Horizontal row with margins for separation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/editTextTeamA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Team A"
+            android:background="#9ecfa5"
+            android:textColorHint="#000000"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextTeamB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Team B"
+            android:background="#9ecfa5"
+            android:textColorHint="#000000"
+            android:layout_weight="1"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:background="#9ecfa5"
+        android:textColorHint="#000000"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"/>
+
+    <!-- Buttons grouped without ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/addGameButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add Game"
+            android:background="#6da67c"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:id="@+id/updateGameButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Update Game"
+            android:background="#6da67c"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:padding="12dp"/>
+    </LinearLayout>
+</LinearLayout>

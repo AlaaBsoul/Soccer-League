@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_options">
+        <item>Search by Date</item>
+        <item>Search by Team</item>
+    </string-array>
+</resources>

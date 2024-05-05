@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d9e7d6"
+    android:padding="16dp">
+
+    <!-- Spinner for selecting search options -->
+    <Spinner
+        android:id="@+id/searchOptionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:entries="@array/search_options"
+        android:background="@color/cardview_light_background" />
+
+    <!-- Input field for date search; visibility managed programmatically -->
+    <EditText
+        android:id="@+id/editTextSearchDate"
+        style="@style/EditTextStyle"
+        android:hint="Enter Date"
+        android:visibility="gone" />
+
+    <!-- Generic input field -->
+    <EditText
+        android:id="@+id/searchTextInput"
+        style="@style/EditTextStyle"
+        android:hint="Enter" />
+
+    <!-- Input field for game search; visibility managed programmatically -->
+    <EditText
+        android:id="@+id/editTextSearchTeam"
+        style="@style/EditTextStyle"
+        android:hint="Enter Game"
+        android:visibility="gone" />
+
+    <!-- Button for initiating search -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="Search"
+        style="@style/ButtonStyle"
+        android:layout_marginLeft="140dp" />
+
+    <!-- RecyclerView for displaying search results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
